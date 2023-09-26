@@ -29,6 +29,7 @@ toggleContainer() {
 
 sendMessageToDirectMessage() {
 this.chatService.messageFromChat = this.message;
+this.message = '';
 }
 
 openDialog() {
