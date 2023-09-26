@@ -1,0 +1,16 @@
+.direct-message-container {
+    min-width: 300px;
+    height: auto;
+    background-color: white;
+    border: 3px solid violet;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .edit {
+        width: 50%;
+        height: 100px;
+        background-color: rgb(165, 175, 175);
+    }
+}

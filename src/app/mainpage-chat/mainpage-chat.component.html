@@ -1,0 +1,21 @@
+
+
+
+
+<app-mainpage-direct-message></app-mainpage-direct-message>
+
+<div class="container">
+    <textarea [(ngModel)]="message" name="" id="" cols="40" rows="10"></textarea>
+    <button (click)="sendMessageToDirectMessage()" class="senden-btn">Senden</button>
+    <button (click)="toggleContainer()">Open dialog</button>
+    <div  [ngStyle]="{ 'display': isContainerVisible ? 'block' : 'none' }">
+        <emoji-mart (emojiClick)="addEmoji($event)"></emoji-mart>
+    </div>
+    
+</div>
+
+
+    
+
+
+

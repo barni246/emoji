@@ -1,0 +1,21 @@
+<div class="direct-message-container">{{this.chatService.messageFromChat}}
+
+
+
+
+    <div>
+
+        <textarea [(ngModel)]="editableMessage" class="edit"> </textarea>
+        <button (click)="editMessage()">Bearbeiten</button>
+        <button (click)="saveEditMessage()">Speichern</button>
+        <button (click)="toggleContainer()">Open dialog</button>
+        <div  [ngStyle]="{ 'display': isContainerVisible ? 'block' : 'none' }">
+            <emoji-mart (emojiClick)="addEmoji($event)"></emoji-mart>
+        </div>
+        
+
+    </div>
+
+
+
+</div>
